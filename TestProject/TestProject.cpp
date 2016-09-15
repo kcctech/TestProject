@@ -1,10 +1,10 @@
 // TestProject.cpp : Defines the entry point for the console application.
 //
 
-#include "stdafx.h"
+//#include "stdafx.h"
+#include <memory>
 #include <iostream>
 #include <string>
-#include <memory>
 #include "SimpleFiboCalsc.h"
 #include <boost/format.hpp>
 #include <boost/chrono.hpp>

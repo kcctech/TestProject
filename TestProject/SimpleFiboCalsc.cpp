@@ -1,6 +1,6 @@
 #include "SimpleFiboCalsc.h"
 #include <limits>
-#include <exception>
+#include <stdexcept>
 
 SimpleFiboCalsc::SimpleFiboCalsc()
 {
@@ -11,7 +11,7 @@ unsigned long long SimpleFiboCalsc::CalcNextFiboNumber()
 {
 	long long AuxVariable;
 	
-	if ((std::numeric_limits<unsigned long long>::max() - CurrFiboNum) < LastFiboNum) throw std::exception("unsigned long long overflow is detected!");
+	if ((std::numeric_limits<unsigned long long>::max() - CurrFiboNum) < LastFiboNum) throw std::runtime_error("unsigned long long overflow is detected!");
 	
 	AuxVariable = CurrFiboNum;
 	CurrFiboNum = CurrFiboNum + LastFiboNum;
