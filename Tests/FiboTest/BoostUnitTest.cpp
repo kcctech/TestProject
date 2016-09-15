@@ -1,4 +1,5 @@
-#include "stdafx.h"
+//#include "stdafx.h"
+#include <boost/test/unit_test.hpp>
 #include <memory>
 #include "../../TestProject/SimpleFiboCalsc.h"
 
